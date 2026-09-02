@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.enkesproject.dragonfire",
+        "sha256_cert_fingerprints": ["8A:9C:7F:71:56:5A:EF:7E:C9:78:47:6C:B0:79:9F:AA:49:98:62:F3:6E:D4:99:8D:94:94:02:66:E9:EB:A4:E6"]
+      }
+    }]
