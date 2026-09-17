@@ -4,6 +4,7 @@
         "namespace": "android_app",
         "package_name": "com.enkesproject.dragonfire",
         "sha256_cert_fingerprints": ["8A:9C:7F:71:56:5A:EF:7E:C9:78:47:6C:B0:79:9F:AA:49:98:62:F3:6E:D4:99:8D:94:94:02:66:E9:EB:A4:E6"]
+      }
       },
       {
       "relation": ["delegate_permission/common.handle_all_urls"],
@@ -11,4 +12,5 @@
         "namespace": "android_app",
         "package_name": "com.enkesproject.runegate",
         "sha256_cert_fingerprints": ["80:AE:C5:E6:56:E9:C5:6F:5F:4A:F2:AF:03:5C:1B:63:3F:B6:D6:92:76:12:2E:F7:5B:40:96:23:D0:85:9C:9F"]
+      }
       }]
