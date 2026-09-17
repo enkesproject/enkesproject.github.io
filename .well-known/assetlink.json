@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.enkesproject.runegate",
+        "sha256_cert_fingerprints": ["80:AE:C5:E6:56:E9:C5:6F:5F:4A:F2:AF:03:5C:1B:63:3F:B6:D6:92:76:12:2E:F7:5B:40:96:23:D0:85:9C:9F"]
+      }
+    }]
