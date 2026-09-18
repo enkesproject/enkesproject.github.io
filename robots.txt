@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://enkesproject.github.io/sitemap.xml
