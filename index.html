@@ -31,30 +31,38 @@
       <div class="hero-banner" aria-hidden="true">
 <svg class="hero-banner-svg" viewBox="0 0 800 220" preserveAspectRatio="xMidYMid slice">
 <defs>
-<linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
-<stop offset="0%" stop-color="#120a1f"/>
-<stop offset="100%" stop-color="#241a3a"/>
-</linearGradient>
+<radialGradient id="spaceGrad" cx="50%" cy="40%" r="80%">
+<stop offset="0%" stop-color="#1a1030"/>
+<stop offset="100%" stop-color="#05040a"/>
+</radialGradient>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+<feGaussianBlur stdDeviation="4" result="blur"/>
+<feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
 </defs>
-<rect width="800" height="220" fill="url(#skyGrad)"/>
-<circle cx="60" cy="30" r="1.6" fill="#fff" opacity="0.5"/>
-<circle cx="150" cy="55" r="1" fill="#fff" opacity="0.35"/>
-<circle cx="690" cy="35" r="1.6" fill="#fff" opacity="0.5"/>
-<circle cx="610" cy="18" r="1" fill="#fff" opacity="0.3"/>
-<circle cx="400" cy="25" r="1" fill="#fff" opacity="0.3"/>
-<polygon points="0,220 0,120 260,190 320,220" fill="#1b1230"/>
-<polygon points="480,220 540,190 800,110 800,220" fill="#1b1230"/>
-<ellipse cx="400" cy="216" rx="150" ry="8" fill="#f5a623" opacity="0.18"/>
-<g class="hero-rabbit">
-<ellipse cx="0" cy="6" rx="15" ry="11" fill="#f5e9d6"/>
-<ellipse cx="10" cy="-2" rx="9" ry="8" fill="#f5e9d6"/>
-<path d="M4,-9 Q1,-24 7,-27 Q11,-22 8,-8 Z" fill="#f5e9d6"/>
-<path d="M12,-9 Q13,-24 19,-25 Q21,-19 16,-7 Z" fill="#f5e9d6"/>
-<circle cx="13" cy="-3" r="1.4" fill="#241a3a"/>
-<path d="M-13,10 Q-20,18 -16,24" stroke="#f5e9d6" stroke-width="5" fill="none" stroke-linecap="round"/>
-<path d="M12,12 Q20,20 15,26" stroke="#f5e9d6" stroke-width="5" fill="none" stroke-linecap="round"/>
+<rect width="800" height="220" fill="url(#spaceGrad)"/>
+<circle cx="50" cy="30" r="1.5" fill="#fff" opacity="0.6"/>
+<circle cx="120" cy="60" r="1" fill="#fff" opacity="0.4"/>
+<circle cx="220" cy="20" r="1.2" fill="#fff" opacity="0.5"/>
+<circle cx="340" cy="45" r="1" fill="#fff" opacity="0.35"/>
+<circle cx="460" cy="18" r="1.3" fill="#fff" opacity="0.5"/>
+<circle cx="560" cy="55" r="1" fill="#fff" opacity="0.4"/>
+<circle cx="670" cy="25" r="1.4" fill="#fff" opacity="0.55"/>
+<circle cx="740" cy="60" r="1" fill="#fff" opacity="0.4"/>
+<circle cx="300" cy="150" r="1" fill="#fff" opacity="0.3"/>
+<circle cx="600" cy="170" r="1.2" fill="#fff" opacity="0.35"/>
+<polygon points="40,110 75,100 75,120" fill="#3fd9c7"/>
+<polygon points="75,95 90,110 75,125" fill="#2ba896"/>
+<polygon points="760,110 725,100 725,120" fill="#f5a623"/>
+<polygon points="725,95 710,110 725,125" fill="#c47f14"/>
+<line class="laser laser-left" x1="90" y1="110" x2="400" y2="110" stroke="#3fd9c7" stroke-width="3" filter="url(#glow)"/>
+<line class="laser laser-right" x1="710" y1="110" x2="400" y2="110" stroke="#f5a623" stroke-width="3" filter="url(#glow)"/>
+<g class="impact" transform="translate(400,110)">
+<circle r="4" fill="#fff" filter="url(#glow)"/>
+<circle class="ring ring1" r="6" fill="none" stroke="#fff" stroke-width="2"/>
+<circle class="ring ring2" r="6" fill="none" stroke="#f5a623" stroke-width="2"/>
 </g>
-</svg>
+  </svg>
   </div>
       <p class="eyebrow pixel">SOLO-MADE · HTML5 · PLAY FREE</p>
       <h1>Free browser games, made one line of code at a time.</h1>
