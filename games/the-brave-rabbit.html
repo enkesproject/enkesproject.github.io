@@ -33,16 +33,12 @@
 
     <div class="player-frame">
       <div class="player-screen">
-        <!--
-          Paste your itch.io embed iframe here.
-          On itch.io: open the game's edit page -> "Embed options" -> copy the iframe code
-          and replace the placeholder src below with it.
-        -->
-        <iframe src="https://itch.io/embed-upload/19302199?color=333333" title="The Brave Rabbit game player" allowfullscreen></iframe>
-      </div>
-      <div class="player-fallback">
-        <span>Game not loading? You can also play it on itch.io.</span>
-        <a href="https://enkes-project.itch.io/the-brave-rabbit" target="_blank" rel="noopener" class="btn btn-outline">Open on itch.io ↗</a>
+  <!--
+  Self-hosted game. Upload the game's build files to:
+  games/play/the-brave-rabbit/  (with an index.html inside)
+  so this iframe loads from your own domain.
+  -->
+  <iframe src="play/the-brave-rabbit/index.html" title="The Brave Rabbit game player" allowfullscreen></iframe>
       </div>
     </div>
 
