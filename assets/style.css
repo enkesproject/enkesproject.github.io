@@ -319,3 +319,35 @@ footer {
   max-width: 800px;
   aspect-ratio: 16 / 9;
 }
+.hero-banner {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 14px;
+  margin: 0 0 28px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+}
+.hero-banner-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.hero-rabbit {
+  transform: translate(120px, 150px) rotate(-6deg);
+  animation: rabbit-leap 3.2s cubic-bezier(.45,0,.2,1) infinite;
+}
+@keyframes rabbit-leap {
+  0%   { transform: translate(120px, 150px) rotate(-6deg); opacity: 1; }
+  8%   { transform: translate(150px, 158px) rotate(-2deg) scale(1,0.9); opacity: 1; }
+  35%  { transform: translate(330px, 60px) rotate(-16deg); opacity: 1; }
+  50%  { transform: translate(400px, 32px) rotate(-6deg); opacity: 1; }
+  65%  { transform: translate(470px, 60px) rotate(6deg); opacity: 1; }
+  80%  { transform: translate(620px, 150px) rotate(10deg) scale(1,0.9); opacity: 1; }
+  88%  { transform: translate(620px, 148px) rotate(0deg); opacity: 1; }
+  92%  { opacity: 1; }
+  94%  { opacity: 0; transform: translate(620px, 148px) rotate(0deg); }
+  95%  { opacity: 0; transform: translate(120px, 150px) rotate(-6deg); }
+  100% { opacity: 1; transform: translate(120px, 150px) rotate(-6deg); }
+     }
