@@ -29,40 +29,16 @@
   <div class="wrap">
     <div>
       <div class="hero-banner" aria-hidden="true">
-<svg class="hero-banner-svg" viewBox="0 0 800 220" preserveAspectRatio="xMidYMid slice">
-<defs>
-<radialGradient id="spaceGrad" cx="50%" cy="40%" r="80%">
-<stop offset="0%" stop-color="#1a1030"/>
-<stop offset="100%" stop-color="#05040a"/>
-</radialGradient>
-<filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-<feGaussianBlur stdDeviation="4" result="blur"/>
-<feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-</filter>
-</defs>
-<rect width="800" height="220" fill="url(#spaceGrad)"/>
-<circle cx="50" cy="30" r="1.5" fill="#fff" opacity="0.6"/>
-<circle cx="120" cy="60" r="1" fill="#fff" opacity="0.4"/>
-<circle cx="220" cy="20" r="1.2" fill="#fff" opacity="0.5"/>
-<circle cx="340" cy="45" r="1" fill="#fff" opacity="0.35"/>
-<circle cx="460" cy="18" r="1.3" fill="#fff" opacity="0.5"/>
-<circle cx="560" cy="55" r="1" fill="#fff" opacity="0.4"/>
-<circle cx="670" cy="25" r="1.4" fill="#fff" opacity="0.55"/>
-<circle cx="740" cy="60" r="1" fill="#fff" opacity="0.4"/>
-<circle cx="300" cy="150" r="1" fill="#fff" opacity="0.3"/>
-<circle cx="600" cy="170" r="1.2" fill="#fff" opacity="0.35"/>
-<polygon points="40,110 75,100 75,120" fill="#3fd9c7"/>
-<polygon points="75,95 90,110 75,125" fill="#2ba896"/>
-<polygon points="760,110 725,100 725,120" fill="#f5a623"/>
-<polygon points="725,95 710,110 725,125" fill="#c47f14"/>
-<line class="laser laser-left" x1="90" y1="110" x2="400" y2="110" stroke="#3fd9c7" stroke-width="3" filter="url(#glow)"/>
-<line class="laser laser-right" x1="710" y1="110" x2="400" y2="110" stroke="#f5a623" stroke-width="3" filter="url(#glow)"/>
-<g class="impact" transform="translate(400,110)">
-<circle r="4" fill="#fff" filter="url(#glow)"/>
-<circle class="ring ring1" r="6" fill="none" stroke="#fff" stroke-width="2"/>
-<circle class="ring ring2" r="6" fill="none" stroke="#f5a623" stroke-width="2"/>
-</g>
-  </svg>
+<div class="hero-banner" aria-hidden="true">
+<video class="hero-banner-video" id="heroVideo" autoplay muted loop playsinline>
+<source src="https://res.cloudinary.com/sogbouii/video/upload/hero-banner.mp4" type="video/mp4">
+</video>
+</div>
+<script>
+document.getElementById('heroVideo').addEventListener('loadedmetadata', function() {
+  this.playbackRate = 1.3;
+});
+</script>
   </div>
       <p class="eyebrow pixel">SOLO-MADE · HTML5 · PLAY FREE</p>
       <h1>Free browser games, made one line of code at a time.</h1>
