@@ -33,16 +33,12 @@
 
     <div class="player-frame">
       <div class="player-screen">
-        <!--
-          Paste your itch.io embed iframe here.
-          On itch.io: open the game's edit page -> "Embed options" -> copy the iframe code
-          and replace the placeholder src below with it.
-        -->
-        <iframe src="https://itch.io/embed-upload/19301848?color=333333" title="Puzzle King game player" allowfullscreen></iframe>
-      </div>
-      <div class="player-fallback">
-        <span>Game not loading? You can also play it on itch.io.</span>
-        <a href="https://enkesproject.itch.io/puzzle-king" target="_blank" rel="noopener" class="btn btn-outline">Open on itch.io ↗</a>
+  <!--
+  Self-hosted game. Upload the game's build files to:
+  games/play/puzzle-king/  (with an index.html inside)
+  so this iframe loads from your own domain.
+  -->
+  <iframe src="play/puzzle-king/index.html" title="Puzzle King game player" allowfullscreen></iframe>
       </div>
     </div>
 
