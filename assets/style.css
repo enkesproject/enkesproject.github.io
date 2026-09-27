@@ -139,9 +139,10 @@ p { color: var(--muted); max-width: 65ch; }
 /* Cartridge rack visual */
 .cart-rack {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
-}
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 40px;
+   }
 .cartridge {
   position: relative;
   background: var(--panel);
